@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+// Print the array from gettimeofday()
+print_r(gettimeofday());
+echo "<br><br>";
+
+// Print the float from gettimeofday()
+echo gettimeofday(true) . "<br><br>";
+
+// Return current time; then format the output
+$mytime=gettimeofday();
+echo "$mytime[sec].$mytime[usec]";
+
+?>
+
+</body>
+</html>
+
+
+
+
+Array ( [sec] => 1634745638 [usec] => 264446 [minuteswest] => 0 [dsttime] => 0 )
+
+1634745638.2658
+
+1634745638.265849
